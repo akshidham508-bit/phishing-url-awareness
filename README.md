@@ -72,8 +72,10 @@ Detailed test results are available in [tests/test_samples.md](tests/test_sample
 
 ## Future Improvements
 
-1. Add more URL warning-sign checks while keeping the tool offline.
-2. Improve the output with clearer explanations of each detected warning sign.
+## Implemented Improvements
+
+1. **Repeated URL Checking:** The program allows users to check multiple URLs in one session and exit by typing `quit`.
+2. **Warning Explanations:** Each detected warning includes a simple explanation to help users understand the possible risk.
 
 ## Limitations
 
