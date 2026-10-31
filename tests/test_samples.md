@@ -1,7 +1,7 @@
 # Phishing URL Awareness Checker — Test Results
 
 ## Purpose
-These tests check whether the program detects the six warning signs specified in the project workbook.
+These tests check whether the program detects the six warning signs specified in the project workbook and whether the implemented improvements work correctly.
 
 ## Sample Test Results
 
@@ -13,6 +13,15 @@ These tests check whether the program detects the six warning signs specified in
 | 4 | `https://a.b.c.d.e.example.invalid/path` | Too many hostname segments warning | Passed |
 | 5 | `https://xn--example.invalid/` | Punycode marker warning | Passed |
 
+## Additional Feature Tests
+
+| Test | Input | Expected result | Status |
+|---|---|---|---|
+| 6 | A URL longer than 100 characters | Unusually long URL warning | Passed |
+| 7 | Enter multiple URLs in one session | Program accepts repeated URL inputs | Passed |
+| 8 | Type `quit` | Program exits with a thank-you message | Passed |
+| 9 | Enter a URL that triggers warnings | Each warning includes a simple explanation | Passed |
+
 ## Limitations
 - The checker identifies basic warning signs only.
 - It does not open URLs or connect to the internet.
@@ -20,4 +29,4 @@ These tests check whether the program detects the six warning signs specified in
 - A URL with no detected warning signs may still be unsafe.
 
 ## Conclusion
-The five sample tests were completed successfully based on the observed test results. The checker provides basic URL awareness and should not replace other security checks.
+The five original sample tests and additional feature tests were completed successfully based on the observed test results. The checker provides basic URL awareness and should not replace other security checks.
