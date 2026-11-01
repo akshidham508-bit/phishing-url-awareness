@@ -73,6 +73,7 @@ The test document includes expected results and recorded statuses.
 
 ![Sample Run](sample_run.png)
 
+
 ### Test Results
 
 ![Test Results](test_results.png)
